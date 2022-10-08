@@ -30,7 +30,9 @@
             section {
                 min-height:100vh;
             }
-
+            .nav-link:focus, .nav-link:hover {
+                color:#f9f0e5;
+            }
             
             @media (min-width: 768px) { 
                 #collapsibleNavId .nav-item::after{
@@ -38,6 +40,19 @@
                     width: 0%;
                     height: 1px;
                     background-color: #f9f0e5;
+                    left: 0;
+                    position: relative;
+                    display: block;
+                    top: 5px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    transition: width 1s;
+                }
+                #collapsibleNavId .nav-item:has(.active)::after{
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    background-color: #000;
                     left: 0;
                     position: relative;
                     display: block;
@@ -100,7 +115,7 @@
           Ab voluptate omnis sint, laborum illo consequatur minima sit numquam mollitia atque repudiandae tempora quidem architecto ipsa quia eos veritatis velit eaque natus in pariatur culpa? Harum officiis laborum aspernatur.</p>
         </div>
     </div>
-    <nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top text-creme bg-violet">
+    <nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top bg-violet">
         <div class="container">
             <a class="navbar-brand" href="#home"><img src="../assets/img/logo.png" alt="" width="50" height="50"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -109,23 +124,23 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="true"
+                        <a class="nav-link text-creme"
                             href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#qui-suis-je">Qui suis-je</a>
+                        <a class="nav-link text-creme" href="#qui-suis-je">Qui suis-je</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#cabinet">Le cabinet</a>
+                        <a class="nav-link text-creme" href="#cabinet">Le cabinet</a>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#evenements">Evenements</a>
+                        <a class="nav-link" aria-current="page" href="#evenements">Evenements</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#tarif">Tarifs</a>
+                        <a class="nav-link text-creme" href="#tarif">Tarifs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#contact">Contacts</a>
+                        <a class="nav-link text-creme" href="#contact">Contacts</a>
                     </li>
                 </ul>
             </div>
