@@ -6,11 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<title>Hélène Brossard thérapeute</title>
 	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <style>
-            p, a, h2 {
+            header a , header p, header h1{
+                text-shadow: 4px 3px 5px #7a5da8;
+            }
+            .evt-link{
+                z-index: 1030;
+                position: fixed;
+                top: 50%;
+                right: 0;
+                transform: rotate(-90deg) translate(0, 139px);
+                padding: 5px;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-size: 1.5rem;
+                width: 45vh;
+                text-align: center;
+            }
+            .img-evt {
+                width: 66%;
+            }
+            .height-minus-nav{
+                min-height: calc(100vh - 76px);
+            }
+            p, a, h1, h2 {
                 color: rgb(77 53 74);
+            }
+            header a:hover, .evt-link:hover {
+                color:#F2FAF8;
             }
             .nav-item a{
                 color:#f9f0e5;
@@ -22,6 +47,12 @@
             }
             .bg-violet{
                 background-color:#7a5da8!important;
+            }
+            .bg-rose{
+                background-color:#FAE2D9!important;
+            }
+            .color-creme{
+                background-color:#f9f0e5;
             }
             .card-bg-violet{
                 background-color:#7a5da8!important;
@@ -53,7 +84,9 @@
                 color:#f9f0e5;
                 opacity: 1;
             }
-            
+            .no-underline {
+                text-decoration:none;
+            }
             @media (min-width: 768px) { 
                 #collapsibleNavId .nav-item a:after{
                     content: "";
@@ -115,11 +148,18 @@
         </style>
 </head>
 <body class="bg-creme" data-bs-spy="scroll" data-bs-target="#nav-bar">
-    <header id="home" class="jumbotron py-5">
-        <div class="container-fluid offset-md-4 col-sm-8 py-5">
-          <h1 class="offset-md-4 text-white">Custom jumbotron</h1>
-          <p class="text-white offset-md-4 fs-4 text-wrap">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nihil officiis expedita eos illum atque quia rerum corporis ex nesciunt, illo sit repellat reprehenderit aut. Veniam ab perferendis ipsa nostrum.
-          Ab voluptate omnis sint, laborum illo consequatur minima sit numquam mollitia atque repudiandae tempora quidem architecto ipsa quia eos veritatis velit eaque natus in pariatur culpa? Harum officiis laborum aspernatur.</p>
+    <header id="home" class="jumbotron">
+        <div class="container-fluid offset-md-7 col-sm-5">
+            <h1 class="text-center text-creme py-5">Hélène BROSSARD <br /> psychopraticienne</h1>
+            <div class="row pt-5">
+                <a href="mailto:helenebrossardtherapeute@orange.fr" class="text-creme h3 no-underline"><i class="bi bi-envelope"></i> helenebrossardtherapeute@orange.fr</a>
+            </div>
+            <div class="row pt-5">
+                <a href="tel:+33683500091" class="text-creme h3 no-underline"><i class="bi bi-telephone"></i> 06 83 50 00 91</a>
+            </div>
+            <div class="row pt-5">
+                <p class="text-creme h3 no-underline"><i class="bi bi-map"></i> La Tardière (85)</p>
+            </div>
         </div>
     </header>
     <nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top bg-violet">
@@ -131,11 +171,11 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-creme"
-                            href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
+                        <a class="nav-link text-creme" href="#qui-suis-je">Qui suis-je</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-creme" href="#qui-suis-je">Qui suis-je</a>
+                        <a class="nav-link text-creme"
+                            href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-creme" href="#cabinet">Le cabinet</a>
@@ -143,15 +183,32 @@
                     <li class="nav-item">
                         <a class="nav-link text-creme" href="#tarif">Tarifs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-creme" href="#contact">Contacts</a>
-                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link text-creme" href="#contact">Contacts</a>-->
+<!--                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="container container-sm-fluid bg-light">
-        <section id="psychologie-transpersonnelle" class="row py-5">
+    <main class="container-fluid w-100 bg-rose  container-sm-fluid bg-light">
+        <a class="evt-link rounded-top bg-warning text-creme" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Évènements
+        </a>
+        <section id="qui-suis-je" class="row py-5 bg-rose">
+            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+                Qui suis-je
+            </h2>
+            <div class="offset-sm-1 col-sm-3  d-none d-md-block">
+                <img src="../assets/img/helene2.jpg" alt="Moi" class="img-fluid offset-sm-1 col-sm-3 w-100 h-auto rounded-circle img-fluid">
+            </div>
+            <p class="offset-sm-1 col-md-6 col-sm-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel fugit sapiente animi odit nesciunt commodi doloremque id eveniet iste nostrum nihil, eum cumque mollitia assumenda perferendis explicabo illum earum?
+                Alias tempore culpa deserunt, aperiam, perferendis amet et dolor sed accusantium repellendus asperiores itaque odio voluptates aliquam? Repellat quidem, laudantium obcaecati doloribus laborum totam reiciendis cumque, rerum modi esse accusamus!
+                Fugit dolore nisi praesentium pariatur voluptate, obcaecati quo quis minus quam deleniti laudantium tenetur blanditiis ducimus aliquam possimus beatae omnis? Illum eveniet dignissimos maxime exercitationem neque. Animi ipsum mollitia numquam!
+            </p>
+            <img src="../assets/img/helene2.jpg" alt="Moi" class="rounded-circle img-fluid offset-sm-1 col-md-3 col-sm-10 d-sm-block d-md-none">
+        </section>
+        <section id="psychologie-transpersonnelle" class="row py-5 bg-creme">
             <h2 class="offset-sm-1 col-sm-10 h2 pt-5 pb-4">
                 La psychologie transpersonnelle
             </h2>
@@ -164,55 +221,41 @@
                 Eaque blanditiis quibusdam consequuntur nulla corrupti atque, nobis quia aliquid qui obcaecati laudantium eligendi alias! Quibusdam incidunt fuga ipsam aperiam consequuntur corporis eos ducimus perferendis culpa beatae assumenda, repudiandae veritatis? <a href="./psycho-details.html">En savoir plus</a>
             </p>
             <div class="offset-md-1 col-md-3 col-sm-10">
-                <img src="../assets/img/psycho.jpg" alt="La psychologie transpersonnelle" class="offset-sm-1 col-sm-3 w-100 h-auto rounded-circle img-fluid">      
+                <img src="../assets/img/psycho.jpg" alt="La psychologie transpersonnelle" class="offset-sm-1 col-sm-3 w-100 h-auto rounded-circle img-fluid">
             </div>
         </section>
-        <section id="qui-suis-je" class="row py-5">
-            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
-                Qui suis-je
-            </h2>
-            <div class="offset-sm-1 col-sm-3  d-none d-md-block">
-                <img src="../assets/img/helene2.jpg" alt="Moi" class="img-fluid offset-sm-1 col-sm-3 w-100 h-auto rounded-circle img-fluid">      
-            </div>
-            <p class="offset-sm-1 col-md-6 col-sm-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel fugit sapiente animi odit nesciunt commodi doloremque id eveniet iste nostrum nihil, eum cumque mollitia assumenda perferendis explicabo illum earum?
-                Alias tempore culpa deserunt, aperiam, perferendis amet et dolor sed accusantium repellendus asperiores itaque odio voluptates aliquam? Repellat quidem, laudantium obcaecati doloribus laborum totam reiciendis cumque, rerum modi esse accusamus!
-                Fugit dolore nisi praesentium pariatur voluptate, obcaecati quo quis minus quam deleniti laudantium tenetur blanditiis ducimus aliquam possimus beatae omnis? Illum eveniet dignissimos maxime exercitationem neque. Animi ipsum mollitia numquam!
-            </p>    
-            <img src="../assets/img/helene2.jpg" alt="Moi" class="rounded-circle img-fluid offset-sm-1 col-md-3 col-sm-10 d-sm-block d-md-none">    
-        </section>
-        <section id="cabinet" class="row py-5">
+        <section id="cabinet" class="row py-5 bg-rose">
             <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
                 Le cabinet
             </h2>
             <div id="carouselId" class="carousel slide offset-md-2 col-md-8 carousel-dark" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active" data-bs-interval="1500">
+                    <div class="carousel-item active">
 						<div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/1.jpg" height="400" class="w-auto d-block" alt="First slide">
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="1500">
+                    <div class="carousel-item">
                         <div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/2.jpg" height="400" class="w-auto d-block" alt="Second slide">
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="1500">
+                    <div class="carousel-item">
 						<div class="d-flex justify-content-center">
                            <img src="../assets/img/cabinet/3.jpg" height="400" class="w-auto d-block" alt="Third slide">
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="1500">
+                    <div class="carousel-item">
 						<div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/4.jpg" height="400" class="w-auto d-block" alt="4 slide">
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="1500">
+                    <div class="carousel-item">
 						<div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/5.jpg" height="400" class="w-auto d-block" alt="5 slide">
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="1500">
+                    <div class="carousel-item">
 						<div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/6.jpg" height="400" class="w-auto d-block" alt="6 slide">
                         </div>
@@ -229,11 +272,11 @@
                 </button>
             </div>        
         </section>
-        <section id="tarif" class="row py-5">
+        <section id="tarif" class="row py-5 bg-creme">
             <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
                 Tarifs
             </h2>
-            <div class="pt-2 mb-3 row offset-sm-1 col-sm-10 d-flex flex-row text-center justify-content-evenly ">
+            <div class="pt-2 mb-3 row offset-sm-1 col-sm-10 d-flex flex-row text-center justify-content-center ">
                 <div class="col-sm-10 col-md-4 p-2">
                     <div class="card rounded-3 shadow-sm h-100">
                         <div class="card-header py-3 card-bg-violet">
@@ -314,37 +357,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 col-md-4 p-2">
-                    <div class="card rounded-3 shadow-sm h-100">
-                        <div class="card-header py-3 card-bg-violet">
-                            <h4 class="my-0 fw-normal text-creme">Sur mesure</h4>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="img-card-body">
-                                <img src="../assets/img/tarif/demand.png" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                            </div>
-                            <div class="text-card-body">
-                                <p class="h1 card-title pricing-card-title pt-3">75 €</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quisquam natus rem nemo necessitatibus similique labore excepturi corporis? Ullam magni obcaecati error voluptatem atque voluptatum? Corporis, placeat! Iure, numquam odio.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="col-sm-10 col-md-4 p-2">-->
+<!--                    <div class="card rounded-3 shadow-sm h-100">-->
+<!--                        <div class="card-header py-3 card-bg-violet">-->
+<!--                            <h4 class="my-0 fw-normal text-creme">Sur mesure</h4>-->
+<!--                        </div>-->
+<!--                        <div class="card-body p-0">-->
+<!--                            <div class="img-card-body">-->
+<!--                                <img src="../assets/img/tarif/demand.png" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">-->
+<!--                            </div>-->
+<!--                            <div class="text-card-body">-->
+<!--                                <p class="h1 card-title pricing-card-title pt-3">75 €</p>-->
+<!--                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quisquam natus rem nemo necessitatibus similique labore excepturi corporis? Ullam magni obcaecati error voluptatem atque voluptatum? Corporis, placeat! Iure, numquam odio.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </section>
-        <section id="contact" class="row py-5">
-            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
-                Contacts
-            </h2>
-            <div class="offset-sm-1 col-sm-10">
-				<p>Vous pouvez me contacter par email à <a
-						href="mailto:helenebrossardtherapeute@orange.fr">helenebrossardtherapeute@orange.fr</a>, ou bien
-					par télephone au
-					<a href="tel:+33683500091">06 83 50 00 91</a>
-				</p>
-				<p>Je vous accueil sur rendez-vous à la Tardière (85).</p>
-			</div>
-        </section>
+<!--        <section id="contact" class="row py-5 bg-rose">-->
+<!--            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">-->
+<!--                Contacts-->
+<!--            </h2>-->
+<!--            <div class="offset-sm-1 col-sm-10">-->
+<!--				<p>Vous pouvez me contacter par email à <a-->
+<!--						href="mailto:helenebrossardtherapeute@orange.fr">helenebrossardtherapeute@orange.fr</a>, ou bien-->
+<!--					par télephone au-->
+<!--					<a href="tel:+33683500091">06 83 50 00 91</a>-->
+<!--				</p>-->
+<!--				<p>Je vous accueil sur rendez-vous à la Tardière (85).</p>-->
+<!--			</div>-->
+<!--        </section>-->
     </main>
     <footer class="container-fluid bg-violet text-creme">
         <p class="offset-sm-1 col-sm-10 mb-0 py-4 text-wrap">
@@ -353,12 +396,99 @@
         </p>
         <a href="https://www.freepik.com/free-photo/zen-balancing-pebbles-misty-lake_18416496.htm#query=meditation&position=5&from_view=search&track=sph">images depuis</a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-    <script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })</script>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Évènements</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3 class="text-white">Evènements</h3>
+            <div id="carouselEvt" class="carousel carousel-dark slide pt-5" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-1.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 1</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item mx-auto">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-2.jpg" class="d-block img-evt  mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 2</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-3.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 3</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-4.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 4</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-5.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 5</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-6.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 6</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-7.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 7</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-8.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 8</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-9.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 9</h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-10.jpg" class="d-block img-evt mx-auto" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>slide 10 </h5>
+                            <p>un petit texte peut être</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvt" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEvt" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js" ></script>
+    <script>
+</script>
 </body>
 </html>
