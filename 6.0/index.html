@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-	<title>Hélène Brossard thérapeute</title>
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Hélène Brossard thérapeute</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png"/>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <style>
+    <style>
+    body {
+  padding: 0;
+  margin: 0;
+}
             header a , header p, header h1{
                 text-shadow: 4px 3px 5px #7a5da8;
             }
-            .evt-link{
+            .vertical {
+                text-decoration: none;
+                text-orientation: sideways;
+                writing-mode: vertical-lr;
+                height: 45vh;
+                text-align: center;
                 z-index: 1030;
                 position: fixed;
-                top: 50%;
+                top: calc(50% - 22vh);
                 right: 0;
-                transform: rotate(-90deg) translate(0, 139px);
                 padding: 5px;
                 text-decoration: none;
                 font-size: 1.5rem;
-                font-size: 1.5rem;
-                width: 45vh;
-                text-align: center;
             }
             .img-evt {
                 width: 66%;
@@ -34,7 +39,7 @@
             p, a, h1, h2 {
                 color: rgb(77 53 74);
             }
-            header a:hover, .evt-link:hover {
+            header a:hover, .vertical:hover {
                 color:#F2FAF8;
             }
             .nav-item a{
@@ -145,93 +150,120 @@
                     opacity: 1;
                 }
             }
-        </style>
+
+    </style>
 </head>
 <body class="bg-creme" data-bs-spy="scroll" data-bs-target="#nav-bar">
-    <header id="home" class="jumbotron">
-        <div class="container-fluid offset-md-7 col-sm-5">
-            <h1 class="text-center text-creme py-5">Hélène BROSSARD <br /> psychopraticienne</h1>
-            <div class="row pt-5">
-                <a href="mailto:helenebrossardtherapeute@orange.fr" class="text-creme h3 no-underline"><i class="bi bi-envelope"></i> helenebrossardtherapeute@orange.fr</a>
-            </div>
-            <div class="row pt-5">
-                <a href="tel:+33683500091" class="text-creme h3 no-underline"><i class="bi bi-telephone"></i> 06 83 50 00 91</a>
-            </div>
-            <div class="row pt-5">
-                <p class="text-creme h3 no-underline"><i class="bi bi-map"></i> La Tardière (85)</p>
-            </div>
+<header id="home" class="jumbotron">
+    <div class="container-fluid offset-md-3 col-md-9 col-sm-12 offset-lg-7 col-lg-5 ">
+        <h1 class="text-center text-creme py-5">Hélène BROSSARD <br/> psychopraticienne</h1>
+        <div class="row pt-5">
+            <a href="mailto:helenebrossardtherapeute@orange.fr" class="col-md-12 offset-md-0 offset-sm-1 col-sm-10 text-creme h3 no-underline"><i
+                    class="bi bi-envelope"></i> helenebrossardtherapeute@orange.fr</a>
         </div>
-    </header>
-    <nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top bg-violet">
-        <div class="container">
-            <a class="navbar-brand" href="#home"><img src="../assets/img/logo.png" alt="" width="50" height="50"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <div class="row pt-5">
+            <a href="tel:+33683500091" class="col-md-12 offset-md-0 offset-sm-1 col-sm-10 text-creme h3 no-underline"><i class="bi bi-telephone"></i> 06 83 50 00 91</a>
+        </div>
+        <div class="row pt-5">
+            <p class="col-md-12 offset-md-0 offset-sm-1 col-sm-10 text-creme h3 no-underline"><i class="bi bi-map"></i> La Tardière (85)</p>
+        </div>
+    </div>
+</header>
+<nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top bg-violet">
+    <div class="container">
+        <a class="navbar-brand" href="#home"><img src="../assets/img/logo.png" alt="" width="50" height="50"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-creme" href="#qui-suis-je">Qui suis-je</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-creme"
-                            href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-creme" href="#cabinet">Le cabinet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-creme" href="#tarif">Tarifs</a>
-                    </li>
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link text-creme" href="#contact">Contacts</a>-->
-<!--                    </li>-->
-                </ul>
-            </div>
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#qui-suis-je">Qui suis-je</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme"
+                       href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#cabinet">Le cabinet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#tarif">Tarifs</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link text-creme" href="#evenements">Évènements</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <main class="container-fluid w-100 bg-rose  container-sm-fluid bg-light">
-        <a class="evt-link rounded-top bg-warning text-creme" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            Évènements
-        </a>
-        <section id="qui-suis-je" class="row py-5 bg-rose">
-            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
-                Qui suis-je
-            </h2>
-            <div class="offset-sm-1 col-sm-3  d-none d-md-block">
-                <img src="../assets/img/helene2.jpg" alt="Moi" class="img-fluid offset-sm-1 col-sm-3 w-100 h-auto rounded-circle img-fluid">
-            </div>
-            <p class="offset-sm-1 col-md-6 col-sm-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel fugit sapiente animi odit nesciunt commodi doloremque id eveniet iste nostrum nihil, eum cumque mollitia assumenda perferendis explicabo illum earum?
-                Alias tempore culpa deserunt, aperiam, perferendis amet et dolor sed accusantium repellendus asperiores itaque odio voluptates aliquam? Repellat quidem, laudantium obcaecati doloribus laborum totam reiciendis cumque, rerum modi esse accusamus!
-                Fugit dolore nisi praesentium pariatur voluptate, obcaecati quo quis minus quam deleniti laudantium tenetur blanditiis ducimus aliquam possimus beatae omnis? Illum eveniet dignissimos maxime exercitationem neque. Animi ipsum mollitia numquam!
-            </p>
-            <img src="../assets/img/helene2.jpg" alt="Moi" class="rounded-circle img-fluid offset-sm-1 col-md-3 col-sm-10 d-sm-block d-md-none">
-        </section>
-        <section id="psychologie-transpersonnelle" class="row py-5 bg-creme">
-            <h2 class="offset-sm-1 col-sm-10 h2 pt-5 pb-4">
-                La psychologie transpersonnelle
-            </h2>
-            <p class="offset-sm-1 col-md-6 col-sm-10 text-wrap">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel fugit sapiente animi odit nesciunt commodi doloremque id eveniet iste nostrum nihil, eum cumque mollitia assumenda perferendis explicabo illum earum?
-                Alias tempore culpa deserunt, aperiam, perferendis amet et dolor sed accusantium repellendus asperiores itaque odio voluptates aliquam? Repellat quidem, laudantium obcaecati doloribus laborum totam reiciendis cumque, rerum modi esse accusamus!
-                Fugit dolore nisi praesentium pariatur voluptate, obcaecati quo quis minus quam deleniti laudantium tenetur blanditiis ducimus aliquam possimus beatae omnis? Illum eveniet dignissimos maxime exercitationem neque. Animi ipsum mollitia numquam!
-                Atque veniam, maiores cum neque magnam amet provident mollitia consequatur dicta, eligendi obcaecati non reprehenderit ut repudiandae modi suscipit dignissimos unde nihil, aperiam sequi quod corporis vitae! Nesciunt, maiores illo?
-                Neque quae culpa, dicta accusamus, voluptate impedit sapiente laborum ipsum eveniet aspernatur tenetur officiis ipsa blanditiis modi facere natus voluptatem? Vero aliquid, corrupti quaerat labore ex cum laudantium! Molestias, autem?
-                Eaque blanditiis quibusdam consequuntur nulla corrupti atque, nobis quia aliquid qui obcaecati laudantium eligendi alias! Quibusdam incidunt fuga ipsam aperiam consequuntur corporis eos ducimus perferendis culpa beatae assumenda, repudiandae veritatis? <a href="./psycho-details.html">En savoir plus</a>
-            </p>
-            <div class="offset-md-1 col-md-3 col-sm-10">
-                <img src="../assets/img/psycho.jpg" alt="La psychologie transpersonnelle" class="offset-sm-1 col-sm-3 w-100 h-auto rounded-circle img-fluid">
-            </div>
-        </section>
-        <section id="cabinet" class="row py-5 bg-rose">
-            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
-                Le cabinet
-            </h2>
-            <div id="carouselId" class="carousel slide offset-md-2 col-md-8 carousel-dark" data-bs-ride="carousel">
+    </div>
+</nav>
+<a class="d-none d-lg-inline vertical rounded-start bg-warning text-creme" data-bs-toggle="offcanvas" href="#evtLauncher"
+   role="button" aria-controls="evtLauncher">
+    Évènements
+</a>
+<main class="container-fluid w-100 bg-rose  container-sm-fluid bg-light">
+    <section id="qui-suis-je" class="row py-5 bg-rose">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Qui suis-je
+        </h2>
+        <div class="offset-sm-1 col-sm-3 d-none d-md-flex align-items-center">
+            <img src="../assets/img/helene2.jpg" alt="Moi"
+                 class="img-fluid col-sm-3 w-100 h-auto rounded-circle img-fluid">
+        </div>
+        <p class="offset-sm-1 col-md-6 col-sm-10 d-flex align-items-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel fugit sapiente animi odit nesciunt
+            commodi doloremque id eveniet iste nostrum nihil, eum cumque mollitia assumenda perferendis explicabo illum
+            earum?
+            Alias tempore culpa deserunt, aperiam, perferendis amet et dolor sed accusantium repellendus asperiores
+            itaque odio voluptates aliquam? Repellat quidem, laudantium obcaecati doloribus laborum totam reiciendis
+            cumque, rerum modi esse accusamus!
+            Fugit dolore nisi praesentium pariatur voluptate, obcaecati quo quis minus quam deleniti laudantium tenetur
+            blanditiis ducimus aliquam possimus beatae omnis? Illum eveniet dignissimos maxime exercitationem neque.
+            Animi ipsum mollitia numquam!
+        </p>
+        <img src="../assets/img/helene2.jpg" alt="Moi"
+             class="rounded-circle img-fluid offset-sm-1 col-md-3 col-sm-10 d-sm-block d-md-none">
+    </section>
+    <section id="psychologie-transpersonnelle" class="row py-5 bg-creme">
+        <h2 class="offset-sm-1 col-sm-10 h2 pt-5 pb-4">
+            La psychologie transpersonnelle
+        </h2>
+        <p class="offset-sm-1 col-md-6 col-sm-10 text-wrap d-flex align-items-center">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vel fugit sapiente animi odit nesciunt
+            commodi doloremque id eveniet iste nostrum nihil, eum cumque mollitia assumenda perferendis explicabo illum
+            earum?
+            Alias tempore culpa deserunt, aperiam, perferendis amet et dolor sed accusantium repellendus asperiores
+            itaque odio voluptates aliquam? Repellat quidem, laudantium obcaecati doloribus laborum totam reiciendis
+            cumque, rerum modi esse accusamus!
+            Fugit dolore nisi praesentium pariatur voluptate, obcaecati quo quis minus quam deleniti laudantium tenetur
+            blanditiis ducimus aliquam possimus beatae omnis? Illum eveniet dignissimos maxime exercitationem neque.
+            Animi ipsum mollitia numquam!
+            Atque veniam, maiores cum neque magnam amet provident mollitia consequatur dicta, eligendi obcaecati non
+            reprehenderit ut repudiandae modi suscipit dignissimos unde nihil, aperiam sequi quod corporis vitae!
+            Nesciunt, maiores illo?
+            Neque quae culpa, dicta accusamus, voluptate impedit sapiente laborum ipsum eveniet aspernatur tenetur
+            officiis ipsa blanditiis modi facere natus voluptatem? Vero aliquid, corrupti quaerat labore ex cum
+            laudantium! Molestias, autem?
+            Eaque blanditiis quibusdam consequuntur nulla corrupti atque, nobis quia aliquid qui obcaecati laudantium
+            eligendi alias! Quibusdam incidunt fuga ipsam aperiam consequuntur corporis eos ducimus perferendis culpa
+                beatae assumenda, repudiandae veritatis? <a href="./psycho-details.html">En savoir plus</a></span>
+
+        </p>
+        <div class="offset-md-1 col-md-3 col-sm-10 d-flex align-items-center">
+            <img src="../assets/img/psycho.jpg" alt="La psychologie transpersonnelle"
+                 class="col-sm-3 w-100 h-auto rounded-circle img-fluid">
+        </div>
+    </section>
+    <section id="cabinet" class="row py-5 bg-rose">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Le cabinet
+        </h2>
+        <span class="d-flex align-items-center">
+            <div id="carouselId" class="py-4 bg-dark carousel slide offset-md-1 col-md-10 carousel-light" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-						<div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/1.jpg" height="400" class="w-auto d-block" alt="First slide">
                         </div>
                     </div>
@@ -241,254 +273,211 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-						<div class="d-flex justify-content-center">
-                           <img src="../assets/img/cabinet/3.jpg" height="400" class="w-auto d-block" alt="Third slide">
+                        <div class="d-flex justify-content-center">
+                            <img src="../assets/img/cabinet/3.jpg" height="400" class="w-auto d-block" alt="Third slide">
                         </div>
                     </div>
                     <div class="carousel-item">
-						<div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/4.jpg" height="400" class="w-auto d-block" alt="4 slide">
                         </div>
                     </div>
                     <div class="carousel-item">
-						<div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/5.jpg" height="400" class="w-auto d-block" alt="5 slide">
                         </div>
                     </div>
                     <div class="carousel-item">
-						<div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <img src="../assets/img/cabinet/6.jpg" height="400" class="w-auto d-block" alt="6 slide">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>        
-        </section>
-        <section id="tarif" class="row py-5 bg-creme">
-            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
-                Tarifs
-            </h2>
-            <div class="pt-2 mb-3 row offset-sm-1 col-sm-10 d-flex flex-row text-center justify-content-center ">
-                <div class="col-sm-10 col-md-4 p-2">
-                    <div class="card rounded-3 shadow-sm h-100">
-                        <div class="card-header py-3 card-bg-violet">
-                            <h4 class="my-0 fw-normal text-creme">Consultation</h4>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="img-card-body">
-                                <img src="../assets/img/tarif/consultation.png" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                            </div>
-                            <div class="text-card-body">
-                                <p class='card-title h1 pt-3'>75 €</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti placeat esse quaerat ipsum repellat itaque architecto nesciunt, officiis, perferendis fuga, eveniet vitae id laborum et tenetur iste voluptate adipisci a?</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-2 bg-creme">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="col-sm-10 col-md-4 p-2">
-                    <div class="card rounded-3 shadow-sm h-100">
-                        <div class="card-header py-3 card-bg-violet indispo">
-                            <h4 class="my-0 fw-normal text-creme">Rêves éveillés</h4>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="img-card-body">
-                                <img src="../assets/img/tarif/reve.jpg" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                            </div>
-                            <div class="text-card-body">
-                                <p class='card-title h1 pt-3'>75 €<br /><small class='text-muted fw-light'>Bientôt disponible</small></p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga sequi, at molestiae suscipit eius doloremque consectetur harum doloribus eum iusto placeat porro quia necessitatibus itaque vitae vel, numquam aspernatur!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-10 col-md-4 p-2">
-                    <div class="card rounded-3 shadow-sm h-100">
-                        <div class="card-header py-3 card-bg-violet indispo">
-                            <h4 class="my-0 fw-normal text-creme">Méditation</h4>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="img-card-body">
-                                <img src="../assets/img/tarif/meditation.png" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                            </div>
-                            <div class="text-card-body">
-                                <p class='card-title h1 pt-3'>75 €<br /><small class='text-muted fw-light'>Bientôt disponible</small></p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam quas ab reprehenderit. Ut, illo nemo nesciunt minima officiis excepturi quo sit! Inventore maxime ab ut dolor libero culpa ea dicta!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-                <div class="col-sm-10 col-md-4 p-2">
-                    <div class="card rounded-3 shadow-sm h-100">
-                        <div class="card-header py-3 card-bg-violet indispo">
-                            <h4 class="my-0 fw-normal text-creme">Art thérapie</h4>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="img-card-body">
-                                <img src="../assets/img/tarif/art-therapy.png" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                            </div>
-                            <div class="text-card-body">
-                                <p class='card-title h1 pt-3'>75 €<br /><small class='text-muted fw-light'>Bientôt disponible</small></p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque temporibus quam doloremque facilis maxime at accusamus nam libero atque consectetur quas, nisi vel est quibusdam asperiores voluptates blanditiis. Rerum.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-10 col-md-4 p-2">
-                    <div class="card rounded-3 shadow-sm h-100">
-                        <div class="card-header py-3 card-bg-violet indispo">
-                            <h4 class="my-0 fw-normal text-creme">Numérologie</h4>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="img-card-body">
-                                <img src="../assets/img/tarif/numerologie.jpg" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
-                            </div>
-                            <div class="text-card-body">
-                                <p class="h1 card-title pricing-card-title pt-3">75 €<br /><small class='text-muted fw-light'>Bientôt disponible</small></p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, illo. Autem fugiat fuga quis, porro esse amet architecto distinctio voluptatum placeat consectetur totam atque necessitatibus dolore possimus officia neque veniam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!--                <div class="col-sm-10 col-md-4 p-2">-->
-<!--                    <div class="card rounded-3 shadow-sm h-100">-->
-<!--                        <div class="card-header py-3 card-bg-violet">-->
-<!--                            <h4 class="my-0 fw-normal text-creme">Sur mesure</h4>-->
-<!--                        </div>-->
-<!--                        <div class="card-body p-0">-->
-<!--                            <div class="img-card-body">-->
-<!--                                <img src="../assets/img/tarif/demand.png" class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">-->
-<!--                            </div>-->
-<!--                            <div class="text-card-body">-->
-<!--                                <p class="h1 card-title pricing-card-title pt-3">75 €</p>-->
-<!--                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum quisquam natus rem nemo necessitatibus similique labore excepturi corporis? Ullam magni obcaecati error voluptatem atque voluptatum? Corporis, placeat! Iure, numquam odio.</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
-        </section>
-<!--        <section id="contact" class="row py-5 bg-rose">-->
-<!--            <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">-->
-<!--                Contacts-->
-<!--            </h2>-->
-<!--            <div class="offset-sm-1 col-sm-10">-->
-<!--				<p>Vous pouvez me contacter par email à <a-->
-<!--						href="mailto:helenebrossardtherapeute@orange.fr">helenebrossardtherapeute@orange.fr</a>, ou bien-->
-<!--					par télephone au-->
-<!--					<a href="tel:+33683500091">06 83 50 00 91</a>-->
-<!--				</p>-->
-<!--				<p>Je vous accueil sur rendez-vous à la Tardière (85).</p>-->
-<!--			</div>-->
-<!--        </section>-->
-    </main>
-    <footer class="container-fluid bg-violet text-creme">
-        <p class="offset-sm-1 col-sm-10 mb-0 py-4 text-wrap">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ea voluptatum distinctio dolorem accusantium, temporibus tempora qui beatae illo, itaque cupiditate nam iste eaque expedita dolore dignissimos placeat aspernatur voluptate!
-            Voluptatibus beatae ratione cumque, ab incidunt esse quibusdam, inventore nemo ullam vero corporis! Quam voluptate provident esse magnam debitis dicta! At magnam laboriosam, cupiditate fugiat est necessitatibus unde consectetur soluta?
-        </p>
-        <a href="https://www.freepik.com/free-photo/zen-balancing-pebbles-misty-lake_18416496.htm#query=meditation&position=5&from_view=search&track=sph">images depuis</a>
-    </footer>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Évènements</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </span>
+    </section>
+    <section id="tarif" class="row py-5 bg-creme">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Tarifs
+        </h2>
+        <div class="pt-2 mb-3 row offset-sm-1 col-sm-10 d-flex flex-row text-center justify-content-center ">
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet">
+                        <p class="h4 my-0 fw-normal text-creme">Consultation</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/consultation.png"
+                                 class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés"
+                                 data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>75 €</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti placeat esse quaerat
+                                ipsum repellat itaque architecto nesciunt, officiis, perferendis fuga, eveniet vitae id
+                                laborum et tenetur iste voluptate adipisci a?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Rêves éveillés</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/reve.jpg" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>75 €<br/><small class='text-muted fw-light'>Bientôt
+                                disponible</small></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga sequi, at
+                                molestiae suscipit eius doloremque consectetur harum doloribus eum iusto placeat porro
+                                quia necessitatibus itaque vitae vel, numquam aspernatur!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Méditation</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/meditation.png" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>75 €<br/><small class='text-muted fw-light'>Bientôt
+                                disponible</small></p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam quas ab reprehenderit. Ut,
+                                illo nemo nesciunt minima officiis excepturi quo sit! Inventore maxime ab ut dolor
+                                libero culpa ea dicta!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Art thérapie</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/art-therapy.png" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>75 €<br/><small class='text-muted fw-light'>Bientôt
+                                disponible</small></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem itaque temporibus quam
+                                doloremque facilis maxime at accusamus nam libero atque consectetur quas, nisi vel est
+                                quibusdam asperiores voluptates blanditiis. Rerum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Numérologie</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/numerologie.jpg" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class="h1 card-title pricing-card-title pt-3">75 €<br/><small
+                                    class='text-muted fw-light'>Bientôt disponible</small></p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, illo. Autem fugiat fuga
+                                quis, porro esse amet architecto distinctio voluptatum placeat consectetur totam atque
+                                necessitatibus dolore possimus officia neque veniam!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <h3 class="text-white">Evènements</h3>
-            <div id="carouselEvt" class="carousel carousel-dark slide pt-5" data-bs-ride="true">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-1.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 1</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item mx-auto">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-2.jpg" class="d-block img-evt  mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 2</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-3.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 3</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-4.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 4</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-5.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 5</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-6.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 6</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-7.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 7</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-8.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 8</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-9.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 9</h5>
-                            <p>un petit texte peut être</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a target="_blank" href="http://facebook.com"><img src="../assets/img/evt/burnout-10.jpg" class="d-block img-evt mx-auto" alt="..."></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>slide 10 </h5>
-                            <p>un petit texte peut être</p>
-                        </div>
+    </section>
+    <section id="evenements" class="row py-5 bg-rose d-lg-none">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Évènements
+        </h2>
+        <div id="carousel-sm-evt" class="carousel slide offset-md-2 col-md-8 carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <a target="_blank" href="http://facebook.com">
+                            <img src="../assets/img/evt/burnout-1.jpg" class="d-block img-evt mx-auto" alt="...">
+                        </a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvt" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselEvt" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <div class="col-md-2"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sm-evt" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-sm-evt" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+</main>
+<footer class="container-fluid bg-violet text-creme">
+    <p class="offset-sm-1 col-sm-10 mb-0 py-4 text-wrap">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ea voluptatum distinctio dolorem accusantium,
+        temporibus tempora qui beatae illo, itaque cupiditate nam iste eaque expedita dolore dignissimos placeat
+        aspernatur voluptate!
+        Voluptatibus beatae ratione cumque, ab incidunt esse quibusdam, inventore nemo ullam vero corporis! Quam
+        voluptate provident esse magnam debitis dicta! At magnam laboriosam, cupiditate fugiat est necessitatibus unde
+        consectetur soluta?
+    </p>
+    <a href="https://www.freepik.com/free-photo/zen-balancing-pebbles-misty-lake_18416496.htm#query=meditation&position=5&from_view=search&track=sph">images
+        depuis</a>
+</footer>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="evtLauncher" aria-labelledby="evtLabel">
+    <div class="offcanvas-header bg-creme">
+        <h2 class="offcanvas-title" id="evtLabel">Évènements</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body bg-creme">
+        <div id="carouselEvt" class="carousel carousel-dark slide pt-5" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a target="_blank" href="http://facebook.com">
+                        <img src="../assets/img/evt/burnout-1.jpg" class="d-block img-evt mx-auto" alt="...">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvt" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEvt" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
-    <script src="../assets/js/bootstrap.bundle.min.js" ></script>
-    <script>
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script>
 </script>
 </body>
 </html>
