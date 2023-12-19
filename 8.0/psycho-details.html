@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hélène Brossard thérapeute</title>
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <style>
+    body {
+  padding: 0;
+  margin: 0;
+}
+            header a , header p, header h1{
+                text-shadow: 4px 3px 5px #7a5da8;
+            }
+            .vertical {
+                text-decoration: none;
+                text-orientation: sideways;
+                writing-mode: vertical-lr;
+                height: 45vh;
+                text-align: center;
+                z-index: 1030;
+                position: fixed;
+                top: calc(50% - 22vh);
+                right: 0;
+                padding: 5px;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            .img-evt {
+                width: 66%;
+            }
+            .height-minus-nav{
+                min-height: calc(100vh - 76px);
+            }
+            p, a, h1, h2 {
+                color: rgb(77 53 74);
+            }
+            header a:hover, .vertical:hover {
+                color:#F2FAF8;
+            }
+            .nav-item a{
+                color:#f9f0e5;
+                opacity: 0.7;
+            }
+            .nav-link.active{
+                color:#f9f0e5!important;
+                opacity: 1;
+            }
+            .bg-violet{
+                background-color:#7a5da8!important;
+            }
+            .bg-rose{
+                background-color:#FAE2D9!important;
+            }
+            .color-creme{
+                background-color:#f9f0e5;
+            }
+            .card-bg-violet{
+                background-color:#7a5da8!important;
+            }
+            .indispo{
+                opacity: 0.5;
+            }
+            .bg-creme {
+                background-color:#f9f0e5;
+            }
+            .text-creme {
+                color:#f9f0e5;
+            }
+            .jumbotron {
+                min-height: calc(100vh - 76px);
+                background-image: url(../assets/img/bouddha.png);
+                background-size: cover;
+            }
+            .jumbotron p {
+                padding-right: 50px;
+            }
+            h2{
+	            text-shadow: 4px 3px 5px #7a5da8;
+            }
+            section {
+                min-height:100vh;
+            }
+            .nav-item a:hover {
+                color:#f9f0e5;
+                opacity: 1;
+            }
+            .no-underline {
+                text-decoration:none;
+            }
+            @media (min-width: 768px) {
+                #collapsibleNavId .nav-item a:after{
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    background-color: #f9f0e5;
+                    left: 0;
+                    position: relative;
+                    display: block;
+                    top: 5px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    transition: width 1s;
+                }
+                #collapsibleNavId .nav-item:hover a::after {
+                    width: 80%;
+                }
+                /* Tarif cards hover */
+                .text-card-body{
+                    overflow: hidden;  /* Hide the element content, while height = 0 */
+                    height: 0;
+                    opacity: 0;
+                    transition: height 0ms 400ms, opacity 400ms 0ms;
+                }
+                .img-card-body{
+                    overflow: hidden;  /* Hide the element content, while height = 0 */
+                    height: auto;
+                    opacity: 1;
+                    transition: height 0ms 400ms, opacity 400ms 0ms;
+                }
+                .card:hover .img-card-body {
+                    height: 0;
+                    opacity: 0;
+                }
+                .card:hover .text-card-body {
+                    height: auto;
+                    opacity: 1;
+                }
+                .card-body{
+                    min-height: auto !important;
+                }
+            }
+            @media (max-width: 767.98px) {
+                #collapsibleNavId .nav-item .active::after {
+                    background-color: #f9f0e5!important;
+                }
+                .container-sm-fluid {
+                    width: 100% !important;
+                    max-width: 100%;
+                }
+                .img-card-body{
+                    display:none;
+                }
+                .text-card-body{
+                    height: auto;
+                    opacity: 1;
+                }
+            }
+            .bd-callout {
+    padding: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #765ea3;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+    }
+    .bd-callout-info {
+    border-left-color:#765ea3;
+    }
+    a sup {
+    text-decoration:none;
+    display:inline-block;}
+	</style>
+  </head>
+  <body class="bg-creme" data-bs-spy="scroll" data-bs-target="#nav-bar">
+  <header id="home" class="jumbotron">
+      <div class="container-fluid offset-md-3 col-md-9 col-sm-12 offset-lg-7 col-lg-5 ">
+          <h1 class="text-center text-creme py-5">Hélène BROSSARD <br/> psychopraticienne transpersonnelle</h1>
+          <div class="row pt-5">
+              <a href="mailto:helenebrossardtherapeute@orange.fr" class="col-md-12 offset-md-0 offset-sm-1 col-sm-10 text-creme h3 no-underline"><i
+                      class="bi bi-envelope"></i> helenebrossardtherapeute@orange.fr</a>
+          </div>
+          <div class="row pt-5">
+              <a href="tel:+33683500091" class="col-md-12 offset-md-0 offset-sm-1 col-sm-10 text-creme h3 no-underline"><i class="bi bi-telephone"></i> 06 83 50 00 91</a>
+          </div>
+          <div class="row pt-5">
+              <p class="col-md-12 offset-md-0 offset-sm-1 col-sm-10 text-creme h3 no-underline"><i class="bi bi-map"></i> La Tardière (85)</p>
+          </div>
+      </div>
+  </header>
+  <nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top bg-violet">
+      <div class="container">
+          <a class="navbar-brand" href="#home"><img src="../assets/img/logo.png" alt="" width="50" height="50"></a>
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link text-creme" href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-creme" href="./index.html#qui-suis-je">Qui suis-je ?</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-creme" href="./index.html#contacts">contacts</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-creme" href="./index.html#tarif">Tarifs</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-creme" href="./index.html#liens utiles">Liens utiles</a>
+                  </li>
+                  <li class="nav-item d-lg-none">
+                      <a class="nav-link text-creme" href="#evenements">Évènements</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <main class="container-fluid w-100 bg-rose  container-sm-fluid bg-light">
+        <section id="psychologie-transpersonnelle" class="row py-5 bg-rose">
+            <h2 class="offset-sm-1 col-sm-10 h2 pt-5 pb-4">
+                La psychologie transpersonnelle
+            </h2>
+
+            <div class="offset-md-1 col-md-3 col-sm-10 d-flex align-items-center">
+                <img src="../assets/img/psycho.jpg" alt="La psychologie transpersonnelle"
+                     class="col-sm-3 w-100 h-auto rounded-circle img-fluid">
+            </div>
+            <p class="offset-sm-1 col-md-6 col-sm-10 text-wrap d-flex align-items-center">
+                C'est Carl Gustav JUNG qui a le premier utilisé le terme de transpersonnel.
+                En 1971, Abraham MASLOW, Antony SUTICH et Stanislas GROF ont créé : "l'Association pour la Psychologie Transpersonnelle". Ils choisirent le terme "transpersonnel" afin d'intégrer la dimension spirituelle à la Psychologie Humaniste dont ils étaient alors les figures de proue. Cette discipline intègre la dimension spirituelle au cœur de l’humain et utilise les états modifiés de conscience pour une meilleure connaissance de soi.
+                La thérapie transpersonnelle postule que notre souffrance vient de l’enfermement des potentiels de la conscience dans la structure limitée de l’ego. Grâce aux états modifiés de conscience, une dimension plus vaste de la réalité s’ouvre, nous permettant de rencontrer cette part infinie de nous, créant une transformation profonde de notre relation à nous-même, aux autres, au monde et à la vie. Ils sont utilisés dans les thérapies transpersonnelles pour aider la personne à lâcher provisoirement ses défenses mentales et aller à la découverte de son monde intérieur.
+                La thérapie transpersonnelle se base également sur le fait que tout est relié, à l’intérieur de nous, comme à l’extérieur. L’Être humain est perçu dans une globalité (histoire personnelle, santé, culture, religion, famille, …). S’il est en bonnes relations avec lui-même, alors il peut être en bonnes relations avec les autres.
+                Sans être attachée à aucun dogme religieux, la thérapie transpersonnelle enrichie la psychothérapie par la prise en compte de la dimension spirituelle. Elle ouvre un chemin de prise de conscience plus vaste, pour une vie plus entière et plus profonde.
+            </p>
+
+            <p class="offset-sm-1 offset-md-1 col-md-10 col-sm-10 text-wrap d-flex align-items-center">
+                <h2 class="offset-sm-1 col-sm-10 h2 pt-5 pb-4">
+                    Quelques noms du courant transpersonnel
+                </h2>
+                <h4 class="offset-sm-1 col-sm-10 h4 pt-5"><a href="https://fr.wikipedia.org/wiki/Carl_Gustav_Jung" target="_blank">Carl Gustav JUNG <sup>(1875 – 1961)</sup></a></h4>
+                <span class="bd-callout bd-callout-info offset-sm-1 col-sm-10">
+                Très marqué par la philosophie orientale et par ses propres expériences d’états modifiés de conscience, il fut précurseur de la vision transpersonnelle dont il a jeté les bases. Il introduit dans l’inconscient, les notions d’ombre (aspects latents, cachés, non manifestés de la conscience), et de synchronicité.
+                Il a élargi la notion de l’inconscient individuel en découvrant l’inconscient collectif qui est structuré par les archétypes inconscients, les mythes et les symboles universels, héritage profond de l’humanité.
+                Il postule sur l’existence du Soi qui serait comme un centre unificateur de toutes les dimensions de l’être humain, ce Soi étant d’origine sacrée et divine.
+                </span>
+
+                <h4 class="offset-sm-1 col-sm-10 h4 pt-5"><a href="https://fr.wikipedia.org/wiki/Abraham_Maslow" target="_blank">Abraham MASLOW <sup>(1908 – 1970)</sup></a></h4>
+                <span class="bd-callout bd-callout-info offset-sm-1 col-sm-10">
+                Il est un des véritables fondateurs de la psychologie transpersonnelle. En étudiant la hiérarchisation des besoins, et l’origine des motivations, il en arrive à élaborer une psychologie du développement. Sa vision de l’homme et de la conscience est radicalement différente du modèle psychanalytique fondé sur l’étude des névroses et des dysfonctionnements.
+                Auparavant, avec Carl Rogers notamment, il est à l’origine de la psychologie humaniste. Mais quelques années plus tard, il réalise que cette psychologie est trop centrée sur le développement du moi et ne prend pas en compte les stades ultimes de l’évolution de l’individu.
+                L’homme « normal » est donc un homme moyen qui n’a pas développé toutes ses potentialités, qui ne réalise pas toutes ses aspirations les plus profondes, aspirations que Maslow considère comme faisant partie de sa nature. Il fonde son modèle sur l’utilité d’ouvrir à l’individu des espaces de réalisation, de transcendance qu’il va très rapidement qualifier de sacrés ou de divins.
+                Ainsi, d’après sa vision des choses, pour devenir un être humain sain, équilibré, il n’est pas suffisant d’éliminer nos troubles, nos complexes, etc. …, mais il convient de réaliser nos aspirations les plus élevées pour nous élever nous-mêmes.
+                Il a ainsi posé les bases des psychothérapies transpersonnelles.
+                </span>
+
+            <h4 class="offset-sm-1 col-sm-10 h4 pt-5"><a href="https://fr.wikipedia.org/wiki/Stanislav_Grof" target="_blank">Stanislav GROF <sup>(1931 -)</sup></a></h4>
+                <span class="bd-callout bd-callout-info offset-sm-1 col-sm-10">
+                Stanislav GROF a beaucoup contribué au développement de la psychologie transpersonnelle. Il a proposé une nouvelle cartographie de la psyché et également une approche thérapeutique qu’on peut qualifier de spécifiquement transpersonnelle en ce sens qu’elle est basée sur l’utilisation des états modifiés de conscience.
+                Il a commencé ses recherches dans le milieu psychiatrique à Prague dans les années 50 où il fut un pionnier de l’expérimentation des thérapies psycholytiques qui sont ensuite devenues des thérapies psychédéliques basées sur l’utilisation de substances psychoactives (notamment le L.S.D). Par la suite, il élabore entre autres la technique de la Respiration Holotropique.
+                Il a mis l’accent sur le potentiel de guérison des états modifiés de conscience qu’il appelle aussi états holotropiques.
+                </span>
+            </p>
+        </section>
+	</main>
+	<footer>
+		
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

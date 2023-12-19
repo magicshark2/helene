@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Hélène Brossard thérapeute</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png"/>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+    body {
+  padding: 0;
+  margin: 0;
+}
+            header a , header p, header h1{
+                text-shadow: 4px 3px 5px #7a5da8;
+            }
+            .vertical {
+                text-decoration: none;
+                text-orientation: sideways;
+                writing-mode: vertical-lr;
+                height: 45vh;
+                text-align: center;
+                z-index: 1030;
+                position: fixed;
+                top: calc(50% - 22vh);
+                right: 0;
+                padding: 5px;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            .img-evt {
+                width: 66%;
+            }
+            .height-minus-nav{
+                min-height: calc(100vh - 76px);
+            }
+            p, a, h1, h2 {
+                color: rgb(77 53 74);
+            }
+            header a:hover, .vertical:hover {
+                color:#F2FAF8;
+            }
+            .nav-item a{
+                color:#f9f0e5;
+                opacity: 0.7;
+            }
+            .nav-link.active{
+                color:#f9f0e5!important;
+                opacity: 1;
+            }
+            .bg-violet{
+                background-color:#7a5da8!important;
+            }
+            .bg-rose{
+                background-color:#FAE2D9!important;
+            }
+            .color-creme{
+                background-color:#f9f0e5;
+            }
+            .card-bg-violet{
+                background-color:#7a5da8!important;
+            }
+            .indispo{
+                opacity: 0.5;
+            }
+            .bg-creme {
+                background-color:#f9f0e5;
+            }
+            .text-creme {
+                color:#f9f0e5;
+            }
+            .jumbotron {
+                min-height: calc(100vh - 76px);
+                background-image: url(../assets/img/bouddha.png);
+                background-size: cover;
+            }
+            .jumbotron p {
+                padding-right: 50px;
+            }
+            h2{
+	            text-shadow: 4px 3px 5px #7a5da8;
+            }
+            section {
+                min-height:100vh;
+            }
+            .nav-item a:hover {
+                color:#f9f0e5;
+                opacity: 1;
+            }
+            .no-underline {
+                text-decoration:none;
+            }
+            @media (min-width: 768px) { 
+                #collapsibleNavId .nav-item a:after{
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    background-color: #f9f0e5;
+                    left: 0;
+                    position: relative;
+                    display: block;
+                    top: 5px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    transition: width 1s;
+                }
+                #collapsibleNavId .nav-item:hover a::after {                    
+                    width: 80%;
+                }
+                /* Tarif cards hover */
+                .text-card-body{
+                    overflow: hidden;  /* Hide the element content, while height = 0 */
+                    height: 0;
+                    opacity: 0;
+                    transition: height 0ms 400ms, opacity 400ms 0ms;
+                }            
+                .img-card-body{
+                    overflow: hidden;  /* Hide the element content, while height = 0 */
+                    height: auto;
+                    opacity: 1;
+                    transition: height 0ms 400ms, opacity 400ms 0ms;
+                }
+                .card:hover .img-card-body {
+                    height: 0;
+                    opacity: 0;
+                }
+                .card:hover .text-card-body {
+                    height: auto;
+                    opacity: 1;
+                }
+                .card-body{
+                    min-height: auto !important;
+                }
+            }
+            @media (max-width: 767.98px) {
+                #collapsibleNavId .nav-item .active::after {
+                    background-color: #f9f0e5!important;
+                }
+                .container-sm-fluid {
+                    width: 100% !important;
+                    max-width: 100%;
+                }
+                .img-card-body{
+                    display:none;
+                }
+                .text-card-body{
+                    height: auto;
+                    opacity: 1;
+                }
+            }
+
+    </style>
+</head>
+<body class="bg-creme" data-bs-spy="scroll" data-bs-target="#nav-bar">
+<header id="home" class="jumbotron">
+    <div class="container-fluid offset-md-3 col-md-9 col-sm-12 offset-lg-7 col-lg-5 ">
+        <h1 class="text-center text-creme py-5">Hélène BROSSARD <br/> psychopraticienne transpersonnelle</h1>
+    </div>
+</header>
+<nav id="nav-bar" class="navbar navbar-default navbar-expand-md sticky-top bg-violet">
+    <div class="container">
+        <a class="navbar-brand" href="#home"><img src="../assets/img/logo.png" alt="" width="50" height="50"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#psychologie-transpersonnelle">La psychologie transpersonnelle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#qui-suis-je">Qui suis-je ?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#contacts">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#tarif">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-creme" href="#liens_utiles">Liens utiles</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link text-creme" href="#evenements">Évènements</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<a class="d-none d-lg-inline vertical rounded-start bg-warning text-creme" data-bs-toggle="offcanvas" href="#evtLauncher"
+   role="button" aria-controls="evtLauncher">
+    Évènements
+</a>
+<main class="container-fluid w-100 bg-rose  container-sm-fluid bg-light">
+    <section id="psychologie-transpersonnelle" class="row py-5 bg-rose">
+        <h2 class="offset-sm-1 col-sm-10 h2 pt-5 pb-4">
+            La psychologie transpersonnelle
+        </h2>
+        <p class="offset-sm-1 col-md-6 col-sm-10 text-wrap d-flex align-items-center">
+            <span>
+                C'est Carl Gustav JUNG qui a le premier utilisé le terme de transpersonnel.<br>
+En 1971, Abraham MASLOW, Antony SUTICH et Stanislas GROF ont créé : "l'Association pour la Psychologie Transpersonnelle". Ils choisirent le terme "transpersonnel" afin d'intégrer la dimension spirituelle à la Psychologie Humaniste dont ils étaient alors les figures de proue. Cette discipline intègre la dimension spirituelle au cœur de l’humain et utilise les états modifiés de conscience pour une meilleure connaissance de soi.<br>
+La thérapie transpersonnelle postule que notre souffrance vient de l’enfermement des potentiels de la conscience dans la structure limitée de l’ego. Grâce aux états modifiés de conscience, une dimension plus vaste de la réalité s’ouvre, nous permettant de rencontrer cette part infinie de nous, créant une transformation profonde de notre relation à nous-même, aux autres, au monde et à la vie. Ils sont utilisés dans les thérapies transpersonnelles pour aider la personne à lâcher provisoirement ses défenses mentales et aller à la découverte de son monde intérieur.<br>
+La thérapie transpersonnelle se base également sur le fait que tout est relié, à l’intérieur de nous, comme à l’extérieur. L’Être humain est perçu dans une globalité (histoire personnelle, santé, culture, religion, famille, …). S’il est en bonnes relations avec lui-même, alors il peut être en bonnes relations avec les autres.<br>
+Sans être attachée à aucun dogme religieux, la thérapie transpersonnelle enrichie la psychothérapie par la prise en compte de la dimension spirituelle. Elle ouvre un chemin de prise de conscience plus vaste, pour une vie plus entière et plus profonde<br>
+<a href="./psycho-details.html">En savoir plus</a></span>
+
+        </p>
+        <div class="offset-md-1 col-md-3 col-sm-10 d-flex align-items-center">
+            <img src="../assets/img/psycho.jpg" alt="La psychologie transpersonnelle"
+                 class="col-sm-3 w-100 h-auto rounded-circle img-fluid">
+        </div>
+    </section>
+    <section id="qui-suis-je" class="row py-5 bg-creme">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Qui suis-je ?
+        </h2>
+        <div class="offset-sm-1 col-sm-3 d-none d-md-flex align-items-center">
+            <img src="../assets/img/helene2.jpg" alt="Moi"
+                 class="img-fluid col-sm-3 w-100 h-auto rounded-circle img-fluid">
+        </div>
+        <p class="offset-sm-1 col-md-6 col-sm-10 d-flex align-items-center">
+            Après une expérience professionnelle de plusieurs années auprès d’enfants et d’adultes handicapés, ainsi que de personnes âgées, j’entreprends en 2019 une formation à l’IPHT de Nantes (Institut de formation en Psychologie Humaniste et Transpersonnelle). Cinq ans d’étude me permettent aujourd’hui de vous proposer mes compétences et mes expériences acquises afin de vous aider à cheminer vers vous tout en douceur, de manière holistique et transpersonnelle. Je continue à me former, et un dernier cycle de trois ans me permettra d’être art-thérapeute et psychanalyste transpersonnelle.<br>
+            Ces cinq premières années de formation m’ont permis d’acquérir différents outils d’état modifiés de conscience tels que :<br>
+            -	Les rêves éveillés spontanés ou dirigés,<br>
+            -	La méditation et la relaxation,<br>
+            -	Les soins par les couleurs et les chakras.<br>
+            En complément de l’IPHT, je me suis formée aux soins par les bols tibétains, soins vibratoires permettant de libérer et d’harmoniser l’énergie qui circule en nous. C’est un temps de voyage intérieur et de relaxation qui permet de relier tous les niveaux de l’être humain (mental, psychique, émotionnel, corporel et spirituel). La musique a beaucoup d’importance dans ma vie et je crois profondément aux bienfaits des vibrations sonores.<br>
+            Ces différents outils me permettent de vous soutenir en toute sécurité vers une meilleure connaissance de vous-même, ou pour traverser des épreuves difficiles de la vie, tout en respectant profondément la personne que vous êtes.<br>
+            N’hésitez pas à me contacter, je serai ravie de répondre à vos questions.
+
+        </p>
+        <img src="../assets/img/helene2.jpg" alt="Moi"
+             class="rounded-circle img-fluid offset-sm-1 col-md-3 col-sm-10 d-sm-block d-md-none">
+    </section>
+    <section id="contacts" class="row py-5 bg-rose">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Contacts
+        </h2>
+        <div class="offset-sm-1 col-sm-3 align-items-center">
+            <p class="align-items-center">
+                Hélène BROSSARD<br/><hr />
+                1 Bis La Tendronnière<br><br>
+                85120 LA TARDIERE<br><br>
+                06.83.50.00.91<br><hr>
+                helenebrossartherapeute@orange.fr
+
+            </p>
+        </div>
+        <div class="offset-sm-1 col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d761.9601005030702!2d-0.7344529780885865!3d46.67200069137953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDbCsDQwJzE4LjciTiAwwrA0NCcwNC4xIlc!5e1!3m2!1sfr!2sfr!4v1703007426345!5m2!1sfr!2sfr"
+
+                    style="border:0;width:100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <img src="../assets/img/helene2.jpg" alt="Moi"
+             class="rounded-circle img-fluid offset-sm-1 col-md-3 col-sm-10 d-sm-block d-md-none">
+    </section>
+    <section id="tarif" class="row py-5 bg-creme">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Tarifs
+        </h2>
+        <div class="pt-2 mb-3 row offset-sm-1 col-sm-10 d-flex flex-row text-center justify-content-center ">
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet">
+                        <p class="h4 my-0 fw-normal text-creme">Consultation</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/consultation.png"
+                                 class="rounded-bottom img-fluid w-100 h-auto" alt="rêves éveillés"
+                                 data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>50 €</p>
+                            <p>C’est un espace de rencontre où vous pouvez déposer en toute liberté ce qui vous préoccupe. Le lien de confiance se crée par la communication entre vous et moi afin que je mesure le meilleur moyen de vous accompagner.<br>
+                                <br>
+                                Durée : entre 1h00 et 1h30
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Rêves éveillés</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/reve.jpg" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>60 €<br/><small class='text-muted fw-light'></small></p>
+                            <p>Si vous le souhaitez, je peux vous accompagner dans un beau voyage vers votre monde intérieur. Vous y découvrirez beaucoup de richesses et de potentiels latents qui ne demandent qu’à s’exprimer.<br>
+                                <br>
+                                Durée : entre 1h00 et 2h00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">soin aux bols tibétains</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/meditation.png" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>60 €<br/><small class='text-muted fw-light'></small></p>
+                            <p>La vibration des bols tibétains permet une profonde relaxation du corps. L’énergie circule mieux dans le corps et les émotions peuvent s’exprimer. C’est un beau voyage intérieur que vous vous offrez.<br>
+                                <br>
+                                Durée : environ 1h00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Art thérapie</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/art-therapy.png" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class='card-title h1 pt-3'>60 €<br/><small class='text-muted fw-light'></small></p>
+                            <p>L’art est un outil qui permet de prendre conscience et d’exprimer ce qui n’a pas pu être mis en mot. Je vous accompagne tout en douceur à travers la chromothérapie, les mandalas, l’expression des couleurs par les chakras, …<br>
+                                <br>
+                                Durée : environ 1h30
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 col-md-4 p-2">
+                <div class="card rounded-3 shadow-sm h-100">
+                    <div class="card-header py-3 card-bg-violet indispo">
+                        <p class="h4 my-0 fw-normal text-creme">Numérologie</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="img-card-body">
+                            <img src="../assets/img/tarif/numerologie.jpg" class="rounded-bottom img-fluid w-100 h-auto"
+                                 alt="rêves éveillés" data-bs-toggle="tooltip" data-bs-html="true" title="">
+                        </div>
+                        <div class="text-card-body">
+                            <p class="h1 card-title pricing-card-title pt-3">75 €<br/><small
+                                    class='text-muted fw-light'>Bientôt disponible</small></p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, illo. Autem fugiat fuga
+                                quis, porro esse amet architecto distinctio voluptatum placeat consectetur totam atque
+                                necessitatibus dolore possimus officia neque veniam!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="evenements" class="row py-5 bg-rose d-lg-none">
+        <h2 class="offset-sm-1 col-sm-10 pt-5 pb-4">
+            Évènements
+        </h2>
+        <div id="carousel-sm-evt" class="carousel slide offset-md-2 col-md-8 carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <a target="_blank" href="http://facebook.com">
+                            <img src="../assets/img/evt/burnout-1.jpg" class="d-block img-evt mx-auto" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sm-evt" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-sm-evt" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+</main>
+<footer class="container-fluid bg-violet text-creme">
+    <p id="liens_utiles"></p>
+            <a target="_blank"> Liens utiles<br></a>
+    <p class="offset-sm-1 col-md-6 col-sm-10 d-flex align-items-center">
+        <p><a href="https://www.ipht.fr/" target="_blank">Site IPHT</a><br></p>
+        <p><a href="https://www.helloasso.com/associations/association-terre-d-avenir-ata" target="_blank">Terre d’Avenir</a><br></p>
+        <p><a href="https://www.mont-blanc-bien-etre.com/" target="_blank">Alain METRAUX</a><br></p>
+        Blandine BLUTEAU<br>
+        Fabienne AIRAULT<br>
+        <br>
+        Numéro de SIRET : 98104920800011
+    </p>
+    <a href="https://www.freepik.com/free-photo/zen-balancing-pebbles-misty-lake_18416496.htm#query=meditation&position=5&from_view=search&track=sph">images
+        depuis</a>
+</footer>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="evtLauncher" aria-labelledby="evtLabel">
+    <div class="offcanvas-header bg-creme">
+        <h2 class="offcanvas-title" id="evtLabel">Évènements</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body bg-creme">
+        <div id="carouselEvt" class="carousel carousel-dark slide pt-5" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a target="_blank" href="http://facebook.com">
+                        <img src="../assets/img/evt/burnout-1.jpg" class="d-block img-evt mx-auto" alt="...">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvt" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEvt" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
